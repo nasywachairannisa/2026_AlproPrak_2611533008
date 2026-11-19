@@ -9,6 +9,6 @@ print()
 print("Program ini menghasilkan")
 print("Empat baris output")
 print("/ \\ // \\\\ /// \\\\\\")
-print("program ini " + "Dibuat oleh " 
+print("program ini " + "dibuat oleh " 
 + "nasywa_2611533008.")
 
