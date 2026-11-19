@@ -3,12 +3,10 @@ LAST_DIGIT = 8
 daily_limit = 30000 + LAST_DIGIT * 1000
 expenses = []
 
-# Input pengeluaran selama 7 hari
 for i in range(1, 8):
     pengeluaran = int(input(f"Day {i}: "))
     expenses.append(pengeluaran)
 
-# Menghitung total dan mencari pengeluaran tertinggi
 total = 0
 highest = expenses[0]
 highest_day = 1
@@ -24,10 +22,8 @@ for i in range(len(expenses)):
     if expenses[i] > daily_limit:
         days_above += 1
 
-# Menghitung rata-rata
 average = total / len(expenses)
 
-# Menampilkan hasil
 print("Daily limit:", daily_limit)
 print("Total:", total)
 print(f"Average: {average:.1f}")
