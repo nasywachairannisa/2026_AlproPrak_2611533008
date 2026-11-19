@@ -1,11 +1,11 @@
 
-menus = ["Nasi Goreng", "Mie Ayam", "Soto"]
+menu = ["Nasi Goreng", "Mie Ayam", "Soto"]
 number_of_days = 3
 sales = []
 
 for i in range(number_of_days):
     row = []
-    for menu in menus:
+    for menu in menu:
         jumlah = int(input(f"Day {i+1}, {menu}: "))
         row.append(jumlah)
     sales.append(row)
@@ -13,17 +13,17 @@ for i in range(number_of_days):
 print("Total per day:")
 for i in range(number_of_days):
     total = 0
-    for j in range(len(menus)):
+    for j in range(len(menu)):
         total += sales[i][j]
     print(f"Day {i+1}: {total}")
 
 menu_totals = []
 
-for j in range(len(menus)):
+for j in range(len(menu)):
     total = 0
     for i in range(number_of_days):
         total += sales[i][j]
-    menu_totals.append((menus[j], total))
+    menu_totals.append((menu[j], total))
 
 print("Total per menu:", menu_totals)
 
